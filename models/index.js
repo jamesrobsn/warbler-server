@@ -5,7 +5,7 @@ mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 mongoose.set("useUnifiedTopology", true);
 mongoose.Promise = Promise;
-const url = process.env.DATABASEURL || "mongodb://localhost/warbler";
+const url = process.env.DATABASE_URI || "mongodb://localhost/warbler";
 mongoose.connect(url, {
 	keepAlive: true,
 });
